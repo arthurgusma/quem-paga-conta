@@ -20,6 +20,12 @@ export default function App() {
     setInputValue('');
   }
 
+  function setWhosPaying(listNames) {
+    const totalNames = listNames.length;
+    const drawnName = Math.floor(Math.random() * totalNames);
+    return names[drawnName].value; 
+  }
+
   return (
     <div>
       <div>
@@ -35,8 +41,8 @@ export default function App() {
         <ListDisplay listValue={names}/>
       </div>
       <div>
-        <Button btnText='Whos paying?' />
-        <Button btnText='Erase input' />
+        <Button btnText='Whos paying?' toDo={() => setWhosPaying(names)}/>
+        <Button btnText='Erase names' toDo={() => setNames([])}/>
       </div>
     </div>
   );

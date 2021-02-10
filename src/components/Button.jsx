@@ -2,6 +2,6 @@ import React from 'react';
 
 export default function Button(props) {
       return (
-            <button>{props.btnText}</button>
+            <button onClick={() => props.toDo()}>{props.btnText}</button>
       )
 }
