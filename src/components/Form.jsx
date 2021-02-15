@@ -4,14 +4,8 @@ export default function Form(props) {
   return (
     <div>
       <form onSubmit={props.onSubmit} action=''>
-        <div>
-          <label>{props.label}</label>
-          <input
-            value={props.inputValue}
-            onChange={props.onChange}
-            type='text'
-          />
-        </div>
+        <label>{props.label}</label>
+        <input value={props.inputValue} onChange={props.onChange} type='text' />
       </form>
     </div>
   );
