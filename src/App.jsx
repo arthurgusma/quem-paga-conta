@@ -46,7 +46,16 @@ export default function App() {
           </div>{' '}
         </>
       ) : (
-        <SelectedName name={loser} />
+        <>
+          <SelectedName name={loser} />
+          <Button
+            btnText='Reset game'
+            toDo={() => {
+              setLoser('');
+              setNames([]);
+            }}
+          />
+        </>
       )}
     </div>
   );
