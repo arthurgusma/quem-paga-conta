@@ -38,7 +38,7 @@ export default function App() {
       {loser === '' ? (
         <>
           <Form
-            label='Adicione um nome: '
+            label='Adicionar um nome: '
             onSubmit={onFormSubmit}
             inputValue={inputValue}
             setInputValue={setInputValue}

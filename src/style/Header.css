@@ -1,0 +1,32 @@
+.nav-bar {
+  margin: 10px auto 80px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+}
+
+.nav-bar b {
+  margin-left: 5rem;
+  color: #ff75a0;
+}
+
+.nav-bar li a {
+  margin: 0 10px;
+  font-size: 1.1rem;
+  color: #09015f;
+}
+
+.nav-bar li {
+  display: inline;
+}
+
+.nav-bar li + li {
+  margin-right: 10rem;
+}
+
+.nav-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

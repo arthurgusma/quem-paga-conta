@@ -4,9 +4,9 @@ p {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #000; 
 }
 
 a {
-      color: #5b6d5b;
-      
+  color: #ff75a0;
 }
