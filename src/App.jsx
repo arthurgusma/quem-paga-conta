@@ -5,6 +5,7 @@ import Button from './components/Button';
 import ListDisplay from './components/ListDisplay';
 import SelectedName from './components/SelectedName';
 import Footer from './components/Footer';
+import Header from './components/Header';
 
 import './style/App.css';
 
@@ -33,10 +34,11 @@ export default function App() {
 
   return (
     <div className='body-app'>
+      <Header />
       {loser === '' ? (
         <>
           <Form
-            label='Enter name: '
+            label='Adicione um nome: '
             onSubmit={onFormSubmit}
             inputValue={inputValue}
             setInputValue={setInputValue}
@@ -47,12 +49,12 @@ export default function App() {
             <div>
               <Button
                 class='btn play-btn'
-                btnText={`Who's playing?`}
+                btnText='Quem paga?'
                 toDo={() => setWhosPaying(names)}
               />
               <Button
                 class='btn reset-btn'
-                btnText='Erase names.'
+                btnText='Apagar nomes.'
                 toDo={() => setNames([])}
               />
             </div>
@@ -63,7 +65,7 @@ export default function App() {
           <SelectedName name={loser} />
           <Button
             class='btn reset-btn'
-            btnText='Reset game.'
+            btnText='Iniciar jogo.'
             toDo={() => {
               setLoser('');
               setNames([]);
