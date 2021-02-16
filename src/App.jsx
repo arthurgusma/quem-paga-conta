@@ -6,6 +6,8 @@ import ListDisplay from './components/ListDisplay';
 import SelectedName from './components/SelectedName';
 import Footer from './components/Footer';
 
+import './style/App.css';
+
 export default function App() {
   const [names, setNames] = useState([]);
   const [inputValue, setInputValue] = useState('');
@@ -30,7 +32,7 @@ export default function App() {
   }
 
   return (
-    <div>
+    <div className='body-app'>
       {loser === '' ? (
         <>
           <Form
@@ -44,10 +46,15 @@ export default function App() {
           {names.length > 0 && (
             <div>
               <Button
-                btnText='Whos paying?'
+                class='btn play-btn'
+                btnText={`Who's playing?`}
                 toDo={() => setWhosPaying(names)}
               />
-              <Button btnText='Erase names' toDo={() => setNames([])} />
+              <Button
+                class='btn reset-btn'
+                btnText='Erase names.'
+                toDo={() => setNames([])}
+              />
             </div>
           )}
         </>
@@ -55,7 +62,8 @@ export default function App() {
         <>
           <SelectedName name={loser} />
           <Button
-            btnText='Reset game'
+            class='btn reset-btn'
+            btnText='Reset game.'
             toDo={() => {
               setLoser('');
               setNames([]);

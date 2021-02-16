@@ -1,0 +1,12 @@
+p {
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a {
+      color: #5b6d5b;
+      
+}

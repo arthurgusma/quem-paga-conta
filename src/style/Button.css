@@ -1,0 +1,15 @@
+.btn {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  font-size: 16px;
+}
+
+.play-btn {
+  background-color: #94ebcd;
+  color: #000000;
+}
+
+.reset-btn {
+  background-color: #aaaaaa;
+  color: #fff;
+}
