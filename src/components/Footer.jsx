@@ -9,12 +9,14 @@ export default function Footer() {
   const year = today.getFullYear();
 
   return (
-    <p>
-      {`Powered by ${' '}`}
-      <a href='http://gusmadev.com' target='_blank' rel='noopener noreferrer'>
-        gusmadev
-      </a>{' '}
-      <FaRegCopyright /> {year}
-    </p>
+    <div className='footer'>
+      <p>
+        {`Powered by ${' '}`}
+        <a href='http://gusmadev.com' target='_blank' rel='noopener noreferrer'>
+          gusmadev
+        </a>{' '}
+        <FaRegCopyright /> {year}
+      </p>
+    </div>
   );
 }

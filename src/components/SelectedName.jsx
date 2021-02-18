@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function SelectedName(props) {
   return (
-    <div>
-      <h3>Congrats! (Or not)</h3>
-      <h1>{`${props.name} is paying this time!`}</h1>
+    <div className='display-selected '>
+      <h3>Parabéns! (Ou não)</h3>
+      <h2>{`${props.name} paga a conta dessa vez...`}</h2>
     </div>
   );
 }
