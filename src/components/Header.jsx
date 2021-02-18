@@ -1,8 +1,10 @@
 import React from 'react';
 
+import Button from './Button';
+
 import '../style/Header.css';
 
-export default function Hearder() {
+export default function Hearder(props) {
   return (
     <nav className='nav-bar'>
       <div className='nav-group'>
@@ -16,14 +18,22 @@ export default function Hearder() {
           </a>
         </div>
         <div>
-        <ul>
-          <li>
-            <a href='/'>Como Jogar</a>
-          </li>
-          <li>
-            <a href='/'>Sobre</a>
-          </li>
-        </ul>
+          <ul>
+            <li>
+              <Button
+                class='btn nav-btn'
+                btnText='Como jogar'
+                toDo={() => props.onToggleMenu('how to play')}
+              />
+            </li>
+            <li>
+              <Button
+                class='btn nav-btn'
+                btnText='Sobre'
+                toDo={() => props.onToggleMenu('about')}
+              />
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
