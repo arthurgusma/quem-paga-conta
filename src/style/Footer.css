@@ -1,4 +1,4 @@
-p {
+.footer p {
   font-size: 1rem;
   position: absolute;
   bottom: 0;
@@ -7,6 +7,6 @@ p {
   color: #000; 
 }
 
-a {
+.footer a {
   color: #ff75a0;
 }
