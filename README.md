@@ -1,5 +1,6 @@
 # Quem Paga a Conta React App
 This project was created with the intention of exercising my react knowledge.
+###### (You can try it at: https://quem-paga-conta.herokuapp.com/)
 
 ![Demonstration of how the application works.](https://github.com/arthurgusma/quem-paga-conta/blob/main/readme-content/ezgif-2-2f4ad08a1c2f.gif###)
 
