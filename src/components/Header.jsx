@@ -14,7 +14,7 @@ export default function Hearder(props) {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <b>gusmadev</b>
+            <b>&lt;gusmadev/&gt;</b>
           </a>
         </div>
         <div>
