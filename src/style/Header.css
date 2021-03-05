@@ -1,5 +1,5 @@
 .nav-bar {
-  margin: 10px auto 80px;
+  margin: 1rem auto 8rem;
 }
 
 .nav-bar a {
@@ -12,8 +12,8 @@
 }
 
 .nav-bar li a {
-  margin: 0 10px;
-  font-size: 1.1rem;
+  margin: 0 1rem;
+  font-size: 1.5rem;
   color: #09015f;
 }
 
